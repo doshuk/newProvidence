@@ -1,0 +1,815 @@
+/* Обнуление */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*------------------------------------------------------*/
+
+/*font*/
+@font-face {
+    font-family: Lato-regular;
+    src: url("../fonts/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato-light;
+    src: url("../fonts/Lato-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato-bold;
+    src: url("../fonts/Lato-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Satisfy-regular;
+    src: url("../fonts/Satisfy-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: Lato-regular, sans-serif;
+}
+
+.header {
+    background: #f4f4f5 url("../img/Background.png") 0 0 /cover no-repeat;
+    height: 100vh;
+}
+
+.headerInner {
+    display: flex;
+    padding: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar {
+    display: flex;
+    font-size: 16pt;
+    font-family: Lato-regular, sans-serif;
+}
+
+.nav_link_left {
+    margin-left: 39pt;
+    color: black;
+}
+
+.nav_link_left:hover {
+    text-decoration: underline;
+}
+
+.nav_link_left:last-child {
+    margin-right: 0;
+}
+
+.navBar_2 {
+    word-spacing: 30pt;
+    line-height: 44px;
+    text-align: center;
+}
+
+.navBar_2:first-child {
+    margin-left: 0;
+}
+
+.blue {
+    height: 44px;
+    width: 130px;
+    border-radius: 22px;
+    background-color: #267df4;
+    color: white;
+}
+
+.blue img {
+    padding-right: 10px;
+}
+
+.nav_link_right:nth-child(1) {
+    color: #9f9fa1;
+    font-size: 16pt;
+    font-family: Lato-regular, sans-serif;
+}
+
+.nav_link_right:nth-child(2) {
+    color: #000;
+    font-size: 16pt;
+}
+
+.intro {
+    text-align: center;
+}
+
+.wht {
+    font-size: 60pt;
+    padding-bottom: 40px;
+}
+
+.text {
+    font-size: 15pt;
+    padding: 0 30px 100px;
+    color: #8c8f94;
+}
+
+.watch_video {
+    border-radius: 25px;
+    width: 205px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #8c8f94;
+    font-size: 12pt;
+}
+
+.watch_video img {
+    padding-right: 10px;
+}
+
+.realTime_awao {
+    margin: 120px 40px 130px 40px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.realTime_awao h3 {
+    font-size: 26pt;
+    padding-bottom: 40px;
+}
+
+.realTime_awao p {
+    font-size: 18pt;
+    color: #8c8f94;
+    padding-bottom: 40px;
+}
+
+.realTime_awao img {
+    padding-bottom: 40px;
+}
+
+.realTime {
+    width: 50%;
+    margin-right: 105px;
+}
+
+.adopt {
+    width: 50%;
+}
+
+.protected_day {
+    margin-top: 124px;
+    background: url("../img/iPhone 6.png") left no-repeat;
+    height: 879px;
+    margin-bottom: 130px;
+}
+
+.protected_day h2 {
+    font-size: 40pt;
+    padding-bottom: 70px;
+
+}
+
+.protected_day p {
+    color: #8c8f94;
+
+}
+
+.pr_first {
+    padding-bottom: 35px;
+}
+
+.hack_button {
+    background-color: #267df4;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10pt;
+}
+
+.hack_button img {
+    padding-left: 40px;
+}
+
+.learn {
+    margin-left: 20px;
+    font-size: 10pt;
+    border: 1px solid #8c8f94;
+    background-color: transparent;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.protectedDay_content {
+    width: 470px;
+    float: right;
+    margin-top: 180px;
+}
+
+.pr_second {
+    padding-bottom: 77px;
+}
+
+.everywhere {
+    background: url("../img/World Map.png") right no-repeat;
+    height: 496px;
+    margin-bottom: 180px;
+}
+
+.everywhereContent {
+    width: 470px;
+    float: left;
+}
+
+.wae {
+    font-size: 36pt;
+    font-weight: bold;
+    padding-bottom: 54px;
+}
+
+.everywhereContent p {
+    color: #8c8f94;
+}
+
+.par_first {
+    padding-bottom: 30px;
+}
+
+.par_second {
+    padding-bottom: 55px;
+}
+
+.partners {
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 27px;
+}
+
+.dropbox {
+    padding-right: 20px;
+}
+
+.beautifulInterface {
+    background: #f5f5f8;
+}
+
+.beautifulInterface_content {
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 130px;
+}
+
+.bI {
+    font-size: 34pt;
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+.blue_line {
+    display: inline-block;
+    border-bottom: 2px solid #267df4;
+    width: 38px;
+}
+
+.landingScreen {
+    padding-top: 34px;
+    color: #8c8f94;
+    font-size: 10pt;
+}
+
+.screens {
+    width: inherit;
+}
+
+.nProvidence {
+    color: #9799a1;
+    font-size: 10pt;
+    padding-bottom: 30px;
+}
+
+.new {
+    font-weight: bold;
+}
+
+.getSmartphone {
+    font-size: 32pt;
+    padding-bottom: 44px;
+}
+
+.eMail {
+    width: 486px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid #8c8f94;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.textEmail {
+    background: transparent;
+    height: inherit;
+    padding-left: 16px;
+    width: 300px;
+}
+
+.sendInvite {
+    margin: 2px;
+    background-color: #6fc754;
+    color: #ffffff;
+    border-radius: 23px;
+    width: 154px;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.arrow {
+    float: right;
+    padding-right: 16px;
+}
+
+.downForm{
+    padding-top: 60px;
+    color: #8c8f94;
+    text-transform: uppercase;
+    font-size: 10pt;
+    padding-bottom: 10px;
+}
+.down_appstore{
+    display: flex;
+    width: 210px;
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    font-size: 10pt;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px 0 20px;
+    margin: 0 auto;
+}
+.appStore{
+    font-size: 18pt;
+}
+
+.line_uiKit{
+    margin-top: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userPicks{
+    padding-top: 50px;
+}
+.great_ui_kit{
+    font-size: 26pt;
+    text-align: center;
+    font-family: Lato-light, sans-serif;
+    padding-bottom: 44px;
+}
+
+.great_paragraph{
+    width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Lato-regular, sans-serif;
+    font-size: 12pt;
+    color: #adadb2;
+    padding-bottom: 20px;
+}
+.stars{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.cameron{
+    font-family: Lato-bold, sans-serif;
+    font-size: 8pt;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+/*----------------Button---------------------*/
+.switch {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.switchInput:after {
+    content: 'Individual';
+    position: absolute;
+    line-height: 48px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    font-size: 10pt;
+}
+
+.switchInput:checked:after {
+    content: '';
+}
+
+.switchInput {
+    position: relative;
+    width: 250px;
+    height: 48px;
+    -webkit-appearance: none;
+    outline: none;
+    background: transparent;
+    border-radius: 24px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.switchInput:checked {
+    background: transparent;
+}
+
+.switchInput:before {
+    content: '';
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    top: 4px;
+    left: 4px;
+    background: #fff;
+    font-size: 10pt;
+}
+
+.switchInput:checked:before {
+    content: 'Company';
+    left: 121px;
+    line-height: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.groupBackgroundSwitch {
+    position: absolute;
+    width: 250px;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.4;
+    background: transparent;
+}
+
+.backgroundSwitch {
+    width: 50%;
+    height: 48px;
+    line-height: 44px;
+    padding: 2px 0 0 4px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*----------------Button---------------------*/
+.perfect_plan{
+    background: #f4f4f5;
+    padding-top: 200px;
+}
+.near_choosePP{
+    width: 370px;
+}
+.choose_pp{
+    display: flex;
+    justify-content: space-between;
+}
+.perfPlan{
+    font-size: 36pt;
+    font-family: VarelaRound, sans-serif ;
+    padding-bottom: 60px;
+}
+.you_Are{
+    padding-bottom: 15px;
+    font-family: Lato-bold, sans-serif;
+    font-size: 12pt;
+    color: #26272d ;
+}
+.superButton_switch{
+    padding-bottom: 72px;
+}
+.para_perf_plan{
+    color: #92959a;
+    font-size: 20pt;
+    padding-bottom: 40px;
+}
+.withLink{
+    color: #8c8f94;
+    font-size: 12pt;
+    font-family: Lato-regular, sans-serif;
+    padding-bottom: 240px;
+}
+
+.starter_pro{
+    display: flex;
+
+    text-align: center;
+    border-radius: 5%;
+
+}
+
+.starter, .Pro{
+    width: 330px;
+    height: 510px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-radius: 5%;
+    background-color: #ebebed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clue{
+    color: #333439;
+    font-family: Lato-light, sans-serif;
+    font-size: 28pt;
+    padding-bottom: 24px;
+}
+.likeButton{
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 13px;
+    border: 1px solid #d4d5d6;
+    margin: 0 auto 52px;
+}
+.greyPhrase{
+    color: #8c8f94;
+    font-family: Lato-regular, sans-serif;
+    font-size: 18pt;
+    padding-bottom: 44px;
+}
+
+.unlimitedList{
+    font-size: 14pt;
+    font-family: Lato-regular, sans-serif;
+}
+.unlimitedList li{
+    padding-bottom: 22px;
+    position: relative;
+}
+.unlimitedList li:before{
+    content: '';
+    height: 10px;
+    width: 14px;
+    padding-left: 30px;
+    background: url("../img/On Icon.png") left/auto no-repeat;
+    margin-bottom: 10px;
+}
+.bothButton{
+    font-family: Lato-regular, sans-serif;
+    font-size: 14pt;
+    background-color: transparent;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #267df4;
+    color: #267df4;
+    margin-top: 20px;
+}
+.starter:hover, .Pro:hover{
+    background-color: #ffffff;
+    transform: scale(1.1, 1.1);
+    z-index: 5;
+}
+.starter .unlimitedList li:nth-child(3){
+    color: transparent;
+}
+.starter .unlimitedList li:nth-child(3):before{
+    content: '';
+    background: transparent;
+}
+.subscribe_our_news{
+    margin-top: 86px;
+    text-align: center;
+}
+.newsLetters{
+    font-family: VarelaRound, sans-serif;
+    font-size: 38pt;
+    margin-bottom: 48px;
+}
+.subscribeEMail{
+    height: 48px;
+    width: 550px;
+    border-radius: 24px;
+    border: 1px solid #d4d4d5;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 27px;
+    line-height: 48px;
+    padding-left: 23px;
+    color: #8c8e8f;
+}
+
+.subscribe{
+    background-color: #6fc754;
+    color: #ffffff;
+    width: 130px;
+    font-size: 12pt;
+    font-family: Lato-regular, sans-serif;
+    height: 42px;
+    border-radius: 21px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 24px;
+}
+.promise{
+    color: #a5a7ab;
+    font-size: 12pt;
+    font-family: Lato-regular, sans-serif;
+    margin-bottom: 86px;
+}
+hr{
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.contained_in_footer{
+    padding-top: 84px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+}
+
+.rightSide{
+    display: flex;
+
+}
+.newProvidence{
+    margin-bottom: 30px;
+}
+.leftSide{
+    width: 270px;
+}
+.someTime{
+    color: #8c8f94;
+    font-family: Lato-regular, sans-serif;
+    font-size: 12pt;
+    margin-bottom: 28px;
+}
+.download_app_store{
+    background: #000;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    margin-bottom: 38px;
+}
+.downloadOn span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.apple{
+    padding: 0 10px;
+    margin: auto 0;
+}
+.downloadOn{
+    text-align: center;
+}
+
+.footerLink a{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+.footerLink a:nth-child(1){
+    background: url("../img/Twitter Icon.png") no-repeat;
+}
+.footerLink a:nth-child(2){
+    background: url("../img/Facebook Icon.png") no-repeat;
+}
+.footerLink a:nth-child(3){
+    background: url("../img/Google Icon.png") no-repeat;
+    width: 24px;
+}
+.footerLink a:nth-child(4){
+    background: url("../img/Tumbler Icon.png") no-repeat;
+}
+.footerLink a:nth-child(5){
+    background: url("../img/Pinterest Icon.png") no-repeat;
+}
+.footerLink a:nth-child(6){
+    background: url("../img/LinkedIn Icon.png")no-repeat;
+}
+.rightSide{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 22pt;
+    font-size: 12pt;
+}
+.rightSide li:first-child{
+    font-family: Lato-bold, sans-serif;
+    color: #000000;
+}
+.rightSide li{
+    font-size: 14pt;
+    font-family: Lato-regular, sans-serif;
+    color: #d1d2d4;
+}
+.superFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.superFooter a{
+    text-decoration: underline;
+}
+.superFooter p{
+    font-family: Lato-light, sans-serif;
+    font-size: 12pt;
+}
+.superFooter span{
+    font-family: Satisfy-regular, sans-serif;
+    font-size: 16pt;
+}
